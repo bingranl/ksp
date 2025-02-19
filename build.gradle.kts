@@ -53,6 +53,9 @@ subprojects {
         google()
         maven("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/bootstrap/")
         maven("https://www.jetbrains.com/intellij-repository/releases")
+        maven {
+            url = uri("/usr/local/google/home/bingran/studio-main/out/repo")
+        }
     }
     pluginManager.withPlugin("maven-publish") {
         val publishExtension = extensions.getByType<PublishingExtension>()

@@ -15,6 +15,9 @@ pluginManagement {
         google()
         mavenCentral()
         maven("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/bootstrap/")
+        maven {
+            url = uri("/usr/local/google/home/bingran/studio-main/out/repo")
+        }
     }
 }
 
